@@ -10,6 +10,7 @@ act.onClicked.addListener (tab) ->
 
 setupReplacements = ->
   act.setIcon path: 'not-loaded.png'
+  replacements = null
   xhr = new XMLHttpRequest
   xhr.onreadystatechange = ->
     if xhr.readyState is 4 and xhr.status is 200
