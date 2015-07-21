@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "imposters",
+  "description": "Replaces more and more of the web until you realize that this is not the true reality, and also that there is no truth.",
+  "version": "0.0",
+  "browser_action": {
+    "default_icon": "button.png"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
