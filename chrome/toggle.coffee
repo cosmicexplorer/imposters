@@ -13,11 +13,12 @@ setupReplacements = ->
   xhr = new XMLHttpRequest
   xhr.onreadystatechange = ->
     if xhr.readyState is 4 and xhr.status is 200
-      replacements = xhr.response
+      resp = JSON.parse xhr.response
+      replacements = resp
       act.setIcon path: 'on.png'
       console.log
         loaded: 'replacements'
-        resp: xhr.response
+        resp: resp
   xhr.open 'get',
     'https://raw.githubusercontent.com/cosmicexplorer/imposters/master/' +
       'replacements.json', yes
