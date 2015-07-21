@@ -1,7 +1,6 @@
-replaceAllFromJson = (rplc) ->
-  console.log rplc
+ReplaceAll = require './replace-all'
 
 chrome.runtime.sendMessage 'get-do-replacement', (doReplacement) ->
   if doReplacement
     chrome.runtime.sendMessage 'get-replacement-obj', (replaceObj) ->
-      replaceAllFromJson replaceObj if replaceObj?
+      ReplaceAll.replaceAllFromJson replaceObj if replaceObj?

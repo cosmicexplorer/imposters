@@ -10,7 +10,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["replace.js"]
+      "js": ["bundle.js"]
     }
   ],
   "background": {

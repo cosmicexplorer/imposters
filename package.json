@@ -7,6 +7,7 @@
     "url": "git://github.com/cosmicexplorer/imposters.git"
   },
   "devDependencies": {
+    "browserify": "^11.0.0",
     "coffee-script": "^1.9.3"
   }
 }
