@@ -1,13 +1,32 @@
-sessionStorage.setItem 'imposters-do-replacement', JSON.stringify yes
-
 act = chrome.browserAction
+doReplacement = yes
+replacements = null
 
 act.onClicked.addListener (tab) ->
-  curVal = JSON.parse sessionStorage.getItem 'imposters-do-replacement'
-  sessionStorage.setItem 'imposters-do-replacement', JSON.stringify not curVal
-  act.setIcon path: (if curVal then 'off.png' else 'on.png')
-  console.log "set imposters replacement to #{not curVal}"
+  if replacements?
+    doReplacement = not doReplacement
+    act.setIcon path: (if doReplacement then 'on.png' else 'off.png')
+    console.log "set imposters replacement to #{doReplacement}"
+
+setupReplacements = ->
+  act.setIcon path: 'not-loaded.png'
+  xhr = new XMLHttpRequest
+  xhr.onreadystatechange = ->
+    if xhr.readyState is 4 and xhr.status is 200
+      replacements = xhr.response
+      act.setIcon path: 'on.png'
+      console.log
+        loaded: 'replacements'
+        resp: xhr.response
+  xhr.open 'get',
+    'https://raw.githubusercontent.com/cosmicexplorer/imposters/master/' +
+      'replacements.json', yes
+  xhr.send()
 
 rt = chrome.runtime.onMessage.addListener (req, sender, sendResponse) ->
-  if req is 'get-do-replacement'
-    sendResponse JSON.parse sessionStorage.getItem 'imposters-do-replacement'
+  switch req
+    when 'get-do-replacement' then sendResponse doReplacement
+    when 'get-replacement-obj' then sendResponse replacements
+    when 'setup-replacements' then setupReplacements()
+
+setupReplacements()
