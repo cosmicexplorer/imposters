@@ -1,0 +1,12 @@
+{
+  "name": "imposters",
+  "version": "0.0.0",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cosmicexplorer/imposters.git"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.3"
+  }
+}
