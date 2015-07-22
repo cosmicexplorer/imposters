@@ -2,7 +2,7 @@
 # contain further elements inside it, even though it's typically only used for
 # text highlighting. oh well.
 selectors = 'a, p, b, i, blockquote, q, span, div, li, h1, h2, h3, h4, h5, ' +
-  'h6, title, strong'
+  'h6, title, strong, em'
 
 html2Arr = (htmlCollection) ->
   Array.prototype.slice.call htmlCollection, 0
@@ -20,15 +20,17 @@ makeFunctionFromReplacementObject = (rplc, strictCaps, urls) -> ->
   else
     text
 
+# https://en.wikipedia.org/wiki/Cloud_computing
 replaceAllFromJson = (rplc) ->
   results = html2Arr document.querySelectorAll selectors
-  results = results.map((node) -> html2Arr(node.childNodes).filter (child) ->
-    child.nodeType is 3).reduce (a, b) -> a.concat b # flatten
-  changeFns = rplc.map (el) -> (txt) ->
-    txt.replace new RegExp(el.pattern, "gi"),
-      makeFunctionFromReplacementObject(el.replacement, el.strictCaps)
-  results.forEach (node) ->
-    node.data = fn node.data for fn in changeFns
+  results = results.map (node) -> html2Arr(node.childNodes).filter (child) ->
+    child.nodeType is 3
+  if results.length > 0
+    results = results.reduce (a, b) -> a.concat b # flatten
+    changeFns = rplc.map (el) -> (txt) ->
+      txt.replace new RegExp(el.pattern, "gi"),
+        makeFunctionFromReplacementObject(el.replacement, el.strictCaps)
+    results.forEach (node) ->
+      node.data = fn node.data for fn in changeFns
 
-module.exports =
-  replaceAllFromJson: replaceAllFromJson
+module.exports = replaceAllFromJson

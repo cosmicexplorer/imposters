@@ -3,11 +3,14 @@
   "name": "imposters",
   "version": "0.0.1",
   "description": "Replaces more and more of the web until you realize that this is not the true reality, and also that there is no truth.",
-  "main": "toggle.js",
+  "main": "background-bundle.js",
   "author": "dmac n da crew",
   "engines": {
     "firefox": ">=38.0a1",
     "fennec": ">=38.0a1"
+  },
+  "permissions": {
+    "cross-domain-content": ["https://raw.githubusercontent.com/"]
   },
   "license": "GPL-3.0"
 }
