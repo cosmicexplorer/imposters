@@ -22,7 +22,8 @@ setupReplacements = ->
         resp: resp
   xhr.open 'get',
     'https://raw.githubusercontent.com/cosmicexplorer/imposters/master/' +
-      'replacements.json', yes
+      'replacements.json',
+    yes
   xhr.send()
 
 rt = chrome.runtime.onMessage.addListener (req, sender, sendResponse) ->

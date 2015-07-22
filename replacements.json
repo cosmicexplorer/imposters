@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "pattern": "mill?enn?ials",
+    "replacement": {
+      "text": "Snake People"
+    }
+  },
+  {
+    "pattern": "mill?enn?ial",
+    "replacement": {
+      "text": "Snake Person"
+    }
+  },
+  {
+    "pattern": "cloud",
+    "replacement": {
+      "text": "butt"
+    },
+    "strictCaps": true
+  }
+]
