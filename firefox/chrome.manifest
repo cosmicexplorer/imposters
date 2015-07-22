@@ -1,0 +1,3 @@
+content   imposters                content/
+
+overlay chrome://browser/content/browser.xul  chrome://imposters/content/browserOverlay.xul
