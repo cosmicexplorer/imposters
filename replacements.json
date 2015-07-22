@@ -17,5 +17,12 @@
       "text": "butt"
     },
     "strictCaps": true
+  },
+  {
+    "pattern": "James Adam Buckland",
+    "replacement": {
+      "text": "Jerk Asshole Fuckland"
+    },
+    "strictCaps": true
   }
 ]
