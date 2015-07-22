@@ -15,7 +15,7 @@ makeFunctionFromReplacementObject = (rplc, strictCaps, urls) -> ->
   for el, ind in arguments
     text = text.replace new RegExp("((\\$\\$)*)(\\$#{ind})", "g"), (res, g1) ->
       "#{g1}#{el}"
-  if arguments[0][0] is arguments[0][0].toUpperCase() and strictCaps
+  if strictCaps and arguments[0][0] is arguments[0][0].toUpperCase()
     text.replace /\b./g, (match) -> match.toUpperCase()
   else
     text
