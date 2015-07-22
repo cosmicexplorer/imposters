@@ -64,7 +64,8 @@ clean:
 	rm -f $(OUT_JS) $(CHROME_BACKGROUND_BUNDLE) $(CHROME_BACKGROUND_IN) \
 		$(CHROME_INJECT_BUNDLE) $(CHROME_INJECT_IN) \
 		$(FF_BACKGROUND_BUNDLE) $(FF_BACKGROUND_IN) \
-		$(FF_INJECT_BUNDLE) $(FF_INJECT_IN)
+		$(FF_INJECT_BUNDLE) $(FF_INJECT_IN) \
+		$(FF_DIR)/setup-replacements.js
 
 distclean: clean
 	rm -rf $(NODE_DIR)
