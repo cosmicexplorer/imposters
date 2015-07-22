@@ -8,4 +8,7 @@ self.port.on 'get-do-replacement', (doReplacement) ->
     self.port.on 'get-replacement-obj', (replaceObj) ->
       replaceAllFn = -> ReplaceAll replaceObj if replaceObj?
       replaceAllFn()
-      setTimeout replaceAllFn, 200 # for dynamic pages like google instant
+      # for dynamic pages like google instant
+      setTimeout replaceAllFn, 500
+      setTimeout replaceAllFn, 1000
+      setTimeout replaceAllFn, 2000
