@@ -24,5 +24,11 @@
       "text": "Jerk Asshole Fuckland"
     },
     "strictCaps": true
+  },
+  {
+    "pattern": "sasuage fest",
+    "replacement": {
+      "text": "artisanal meats faire"
+    }
   }
 ]
