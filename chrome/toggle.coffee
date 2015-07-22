@@ -5,18 +5,18 @@ replacements = null
 act.onClicked.addListener (tab) ->
   if replacements?
     doReplacement = not doReplacement
-    act.setIcon path: (if doReplacement then 'on.png' else 'off.png')
+    act.setIcon path: (if doReplacement then 'res/on.png' else 'res/off.png')
     console.log "set imposters replacement to #{doReplacement}"
 
 setupReplacements = ->
-  act.setIcon path: 'not-loaded.png'
+  act.setIcon path: 'res/not-loaded.png'
   replacements = null
   xhr = new XMLHttpRequest
   xhr.onreadystatechange = ->
     if xhr.readyState is 4 and xhr.status is 200
       resp = JSON.parse xhr.response
       replacements = resp
-      act.setIcon path: 'on.png'
+      act.setIcon path: 'res/on.png'
       console.log
         loaded: 'replacements'
         resp: resp
