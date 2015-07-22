@@ -16,10 +16,18 @@ setupReplacements = ->
     if xhr.readyState is 4 and xhr.status is 200
       resp = JSON.parse xhr.response
       replacements = resp
-      act.setIcon path: 'res/on.png'
       console.log
         loaded: 'replacements'
         resp: resp
+      localStorage.setItem 'imposters-replacements',
+        JSON.stringify replacements
+      act.setIcon path: 'res/on.png'
+  xhr.onerror = ->
+    replacements = JSON.parse localStorage.getItem 'imposters-replacements'
+    console.error
+      loaded: 'replacements-from-storage'
+      resp: replacements
+    act.setIcon path: 'res/on.png'
   # use file:// for testing since it takes a while to propagate to rawgit
   # considered using rawgit, but it's not automatically pointed at the most
   # recent commit, which kinda defeats the purpose. we can easily host this on a
