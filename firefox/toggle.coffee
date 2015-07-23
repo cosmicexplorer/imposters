@@ -1,6 +1,7 @@
 self = require 'sdk/self'
 buttons = require 'sdk/ui/button/action'
 tabs = require 'sdk/tabs'
+prefs = require 'sdk/simple-prefs'
 xhr = require 'sdk/net/xhr'
 
 SetupReplacements = require './setup-replacements'
@@ -26,6 +27,7 @@ button.on "click", handleClick button
 
 setup = ->
   button.icon = './imposter19off.png'
+  doReplacement = no
   replacements = null
 
 success = (resp) ->
@@ -51,5 +53,8 @@ tabs.on 'ready', (tab) ->
     worker.port.emit 'get-replacement-obj', replacements
   worker.port.on 'setup-replacements', ->
     setupReplacements()
+
+prefs.on 'updateReplacements', ->
+  setupReplacements()
 
 setupReplacements()

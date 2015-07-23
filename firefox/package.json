@@ -12,5 +12,14 @@
   "permissions": {
     "cross-domain-content": ["https://raw.githubusercontent.com/"]
   },
+  "preferences": [
+    {
+      "name": "updateReplacements",
+      "title": "Refresh your universe",
+      "description": "Refresh replacements settings file.",
+      "label": "Update replacements!",
+      "type": "control"
+    }
+  ],
   "license": "GPL-3.0"
 }
