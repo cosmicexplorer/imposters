@@ -20,7 +20,6 @@ makeFunctionFromReplacementObject = (rplc, strictCaps, urls) -> ->
   else
     text
 
-# https://en.wikipedia.org/wiki/Cloud_computing
 replaceAllFromJson = (rplc) ->
   results = html2Arr document.querySelectorAll selectors
   results = results.map (node) -> html2Arr(node.childNodes).filter (child) ->

@@ -4,6 +4,10 @@ tabs = require 'sdk/tabs'
 prefs = require 'sdk/simple-prefs'
 xhr = require 'sdk/net/xhr'
 
+{Cc, Ci} = require 'chrome'
+cacheServ = Cc["@mozilla.org/netwerk/cache-storage-service;1"]
+cache = cacheServ.getService Ci.nsICacheStorageService
+
 SetupReplacements = require './setup-replacements'
 
 doReplacement = no
@@ -55,6 +59,7 @@ tabs.on 'ready', (tab) ->
     setupReplacements()
 
 prefs.on 'updateReplacements', ->
+  cache.clear()
   setupReplacements()
 
 setupReplacements()
