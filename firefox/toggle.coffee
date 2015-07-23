@@ -59,8 +59,9 @@ tabs.on 'ready', (tab) ->
     setupReplacements()
 
 prefs.on 'updateReplacements', ->
+  # this cache clearing doesn't work, but maybe it will in the future
   cache.clear()
-  cache.purgeFromMemory()
+  cache.purgeFromMemory(3)
   setupReplacements()
 
 setupReplacements()
