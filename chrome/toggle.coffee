@@ -32,10 +32,11 @@ failure = (resp) ->
 
 setupReplacements = -> SetupReplacements setup, success, failure
 
-rt = chrome.runtime.onMessage.addListener (req, sender, sendResponse) ->
+chrome.runtime.onMessage.addListener (req, sender, sendResponse) ->
   switch req
     when 'get-do-replacement' then sendResponse doReplacement
     when 'get-replacement-obj' then sendResponse replacements
-    when 'setup-replacements' then setupReplacements()
+    when 'setup-replacements'
+      chrome.browsingData.removeCache {}, setupReplacements
 
 setupReplacements()
