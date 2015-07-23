@@ -60,6 +60,7 @@ tabs.on 'ready', (tab) ->
 
 prefs.on 'updateReplacements', ->
   cache.clear()
+  cache.purgeFromMemory()
   setupReplacements()
 
 setupReplacements()

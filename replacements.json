@@ -31,5 +31,11 @@
       "text": "artisanal meats faire"
     },
     "strictCaps": true
+  },
+  {
+    "pattern": "(new) pattern",
+    "replacement": {
+      "text": "$1 replacement"
+    }
   }
 ]
