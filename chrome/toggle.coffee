@@ -37,6 +37,7 @@ chrome.runtime.onMessage.addListener (req, sender, sendResponse) ->
     when 'get-do-replacement' then sendResponse doReplacement
     when 'get-replacement-obj' then sendResponse replacements
     when 'setup-replacements'
+      # removing cache here doesn't actually work either, but whatever
       chrome.browsingData.removeCache {}, setupReplacements
 
 setupReplacements()
