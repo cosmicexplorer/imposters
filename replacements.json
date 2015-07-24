@@ -2,14 +2,16 @@
   {
     "pattern": "mill?enn?ials",
     "replacement": {
-      "text": "Snake People"
-    }
+      "text": "snake people"
+    },
+    "strictCaps": true
   },
   {
     "pattern": "mill?enn?ial",
     "replacement": {
-      "text": "Snake Person"
-    }
+      "text": "snake person"
+    },
+    "strictCaps": true
   },
   {
     "pattern": "cloud",
