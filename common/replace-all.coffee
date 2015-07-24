@@ -9,8 +9,8 @@ html2Arr = (htmlCollection) ->
 isValidNode =
   (node) ->
     while node.parentNode isnt document
-      return no if node.getAttribute 'contenteditable' or
-        node.getAttribute 'role' is 'textbox'
+      return no if node.getAttribute? 'contenteditable' or
+        node.getAttribute? 'role' is 'textbox'
       node = node.parentNode
     yes
 
@@ -32,7 +32,10 @@ replaceAllFromJson = (rplc, baseNode, nonRecursive) ->
     txt.replace new RegExp(el.pattern, "gi"),
       makeFunctionFromReplacementObject(el.replacement, el.strictCaps)
   if nonRecursive
-    baseNode.data = fn baseNode.data for fn in changeFns
+    if isValidNode baseNode
+      res = baseNode.data
+      res = fn res for fn in changeFns
+      baseNode.data = res unless baseNode.data is res
   else
     results = html2Arr((baseNode or document).querySelectorAll selectors)
     results = results.concat baseNode if baseNode and baseNode isnt document
@@ -42,7 +45,12 @@ replaceAllFromJson = (rplc, baseNode, nonRecursive) ->
     if results.length > 0
       results = results.reduce (a, b) -> a.concat b # flatten
       results.forEach (node) ->
-        node.data = fn node.data for fn in changeFns
+        # have to check if result is different from prev before setting equal
+        # chrome optimizes away the case in which they're equal, but ff doesn't
+        # and causes infinite loop
+        res = node.data
+        res = fn res for fn in changeFns
+        node.data = res unless node.data is res
 
 watchNodesAndReplaceText = (rplc) ->
   return unless rplc
@@ -51,16 +59,19 @@ watchNodesAndReplaceText = (rplc) ->
   # for dynamic pages like google instant
   setTimeout replaceAllFn, 500
   setTimeout replaceAllFn, 1000
-  setTimeout replaceAllFn, 2000
   obsv = new MutationObserver (records) ->
     for rec in records
       switch rec.type
         when 'characterData' then replaceAllFromJson rplc, rec.target, yes
-        when 'childList' then replaceAllFromJson rplc, rec.target, no
-  setTimeout (-> obsv.observe document,
-    childList: on
-    subtree: on
-    characterData: on), 1000
+        when 'childList'
+          replaceAllFromJson rplc, rec.target, no if rec.addedNodes.length > 0
+  setTimeout (->
+    replaceAllFn()
+    obsv.observe document,
+      childList: on
+      subtree: on
+      characterData: on),
+    2000
 
 module.exports =
   ReplaceAllFromJson: replaceAllFromJson
