@@ -1,8 +1,3 @@
-# most of these will contain ONLY text without tags inside; however, <span> may
-# contain further elements inside it, even though it's typically only used for
-# text highlighting. oh well.
-selectors = 'a,p,b,i,blockquote,q,span,div,li,h1,h2,h3,h4,h5,h6,title,strong,em'
-
 html2Arr = (htmlCollection) ->
   Array.prototype.slice.call htmlCollection, 0
 
@@ -22,10 +17,13 @@ makeFunctionFromReplacementObject = (rplc, strictCaps) -> ->
   for el, ind in arguments
     text = text.replace new RegExp("((\\$\\$)*)(\\$#{ind})", "g"), (res, g1) ->
       "#{g1}#{el}"
-  if strictCaps and arguments[0][0] is arguments[0][0].toUpperCase()
+  if not strictCaps
+    text
+  else if arguments[0] is arguments[0].toUpperCase()
+    text.toUpperCase()
+  else if arguments[0][0] is arguments[0][0].toUpperCase()
     text.replace /\b./g, (match) -> match.toUpperCase()
   else
-    text
 
 replaceAllFromJson = (rplc, baseNode, nonRecursive) ->
   changeFns = rplc.map (el) -> (txt) ->
@@ -37,7 +35,7 @@ replaceAllFromJson = (rplc, baseNode, nonRecursive) ->
       res = fn res for fn in changeFns
       baseNode.data = res unless baseNode.data is res
   else
-    results = html2Arr((baseNode or document).querySelectorAll selectors)
+    results = html2Arr((baseNode or document).getElementsByTagName '*')
     results = results.concat baseNode if baseNode and baseNode isnt document
     results = results.filter isValidNode
     results = results.map (node) -> html2Arr(node.childNodes).filter (child) ->
