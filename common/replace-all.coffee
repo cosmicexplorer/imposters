@@ -27,19 +27,22 @@ makeFunctionFromReplacementObject = (rplc, strictCaps) -> ->
   else
     text
 
-replaceAllFromJson = (rplc, node) ->
-  results = html2Arr((node or document).querySelectorAll selectors)
-  results = results.concat node if node and node isnt document
-  results = results.filter isValidNode
-  results = results.map (node) -> html2Arr(node.childNodes).filter (child) ->
-    child.nodeType is 3
-  if results.length > 0
-    results = results.reduce (a, b) -> a.concat b # flatten
-    changeFns = rplc.map (el) -> (txt) ->
-      txt.replace new RegExp(el.pattern, "gi"),
-        makeFunctionFromReplacementObject(el.replacement, el.strictCaps)
-    results.forEach (node) ->
-      node.data = fn node.data for fn in changeFns
+replaceAllFromJson = (rplc, baseNode, nonRecursive) ->
+  changeFns = rplc.map (el) -> (txt) ->
+    txt.replace new RegExp(el.pattern, "gi"),
+      makeFunctionFromReplacementObject(el.replacement, el.strictCaps)
+  if nonRecursive
+    baseNode.data = fn baseNode.data for fn in changeFns
+  else
+    results = html2Arr((baseNode or document).querySelectorAll selectors)
+    results = results.concat baseNode if baseNode and baseNode isnt document
+    results = results.filter isValidNode
+    results = results.map (node) -> html2Arr(node.childNodes).filter (child) ->
+      child.nodeType is 3
+    if results.length > 0
+      results = results.reduce (a, b) -> a.concat b # flatten
+      results.forEach (node) ->
+        node.data = fn node.data for fn in changeFns
 
 watchNodesAndReplaceText = (rplc) ->
   return unless rplc
@@ -51,7 +54,9 @@ watchNodesAndReplaceText = (rplc) ->
   setTimeout replaceAllFn, 2000
   obsv = new MutationObserver (records) ->
     for rec in records
-      replaceAllFromJson rplc, rec.target
+      switch rec.type
+        when 'characterData' then replaceAllFromJson rplc, rec.target, yes
+        when 'childList' then replaceAllFromJson rplc, rec.target, no
   setTimeout (-> obsv.observe document,
     childList: on
     subtree: on
