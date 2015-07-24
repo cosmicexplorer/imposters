@@ -9,3 +9,4 @@ chrome.runtime.sendMessage 'get-do-replacement', (doReplacement) ->
       setTimeout replaceAllFn, 500
       setTimeout replaceAllFn, 1000
       setTimeout replaceAllFn, 2000
+      setInterval replaceAllFn, 5000 # keep doing every 5 seconds
