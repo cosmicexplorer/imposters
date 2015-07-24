@@ -1,16 +1,23 @@
 # most of these will contain ONLY text without tags inside; however, <span> may
 # contain further elements inside it, even though it's typically only used for
 # text highlighting. oh well.
-selectors = 'a, p, b, i, blockquote, q, span, div, li, h1, h2, h3, h4, h5, ' +
-  'h6, title, strong, em'
+selectors = 'a,p,b,i,blockquote,q,span,div,li,h1,h2,h3,h4,h5,h6,title,strong,em'
 
 html2Arr = (htmlCollection) ->
   Array.prototype.slice.call htmlCollection, 0
 
+isValidNode =
+  (node) ->
+    while node.parentNode isnt document
+      return no if node.getAttribute 'contenteditable' or
+        node.getAttribute 'role' is 'textbox'
+      node = node.parentNode
+    yes
+
 # wish i could just put a function into the json and eval it, but that's
 # literally the most insecure thing ever to do in the world, so here's an
 # attempt to make it less sucky
-makeFunctionFromReplacementObject = (rplc, strictCaps, urls) -> ->
+makeFunctionFromReplacementObject = (rplc, strictCaps) -> ->
   text = rplc.text
   for el, ind in arguments
     text = text.replace new RegExp("((\\$\\$)*)(\\$#{ind})", "g"), (res, g1) ->
@@ -20,8 +27,10 @@ makeFunctionFromReplacementObject = (rplc, strictCaps, urls) -> ->
   else
     text
 
-replaceAllFromJson = (rplc) ->
-  results = html2Arr document.querySelectorAll selectors
+replaceAllFromJson = (rplc, node) ->
+  results = html2Arr((node or document).querySelectorAll selectors)
+  results = results.concat node if node and node isnt document
+  results = results.filter isValidNode
   results = results.map (node) -> html2Arr(node.childNodes).filter (child) ->
     child.nodeType is 3
   if results.length > 0
@@ -32,4 +41,22 @@ replaceAllFromJson = (rplc) ->
     results.forEach (node) ->
       node.data = fn node.data for fn in changeFns
 
-module.exports = replaceAllFromJson
+watchNodesAndReplaceText = (rplc) ->
+  return unless rplc
+  replaceAllFn = -> replaceAllFromJson rplc
+  replaceAllFn()
+  # for dynamic pages like google instant
+  setTimeout replaceAllFn, 500
+  setTimeout replaceAllFn, 1000
+  setTimeout replaceAllFn, 2000
+  obsv = new MutationObserver (records) ->
+    for rec in records
+      replaceAllFromJson rplc, rec.target
+  setTimeout (-> obsv.observe document,
+    childList: on
+    subtree: on
+    characterData: on), 1000
+
+module.exports =
+  ReplaceAllFromJson: replaceAllFromJson
+  WatchNodesAndReplaceText: watchNodesAndReplaceText
