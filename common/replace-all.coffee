@@ -3,6 +3,7 @@ html2Arr = (htmlCollection) ->
 
 isValidNode =
   (node) ->
+    return no unless node
     while node.parentNode isnt document
       return no if node.getAttribute? 'contenteditable' or
         node.getAttribute? 'role' is 'textbox'
