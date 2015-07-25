@@ -25,6 +25,7 @@ makeFunctionFromReplacementObject = (rplc, strictCaps) -> ->
   else if arguments[0][0] is arguments[0][0].toUpperCase()
     text.replace /\b./g, (match) -> match.toUpperCase()
   else
+    text
 
 replaceAllFromJson = (rplc, baseNode, nonRecursive) ->
   changeFns = rplc.map (el) -> (txt) ->
