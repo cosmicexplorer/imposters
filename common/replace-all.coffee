@@ -1,12 +1,17 @@
 html2Arr = (htmlCollection) ->
   Array.prototype.slice.call htmlCollection, 0
 
+inspectInvalidNode = (node) ->
+  not node or
+    node.tagName.toUpperCase() is 'input' or
+    node.getAttribute? 'contenteditable' or
+    node.getAttribute? 'role' is 'textbox'
+
 isValidNode =
   (node) ->
-    return no unless node
+    return no if node is document or node.parentNode is document
     while node.parentNode isnt document
-      return no if node.getAttribute? 'contenteditable' or
-        node.getAttribute? 'role' is 'textbox'
+      return no if inspectInvalidNode node
       node = node.parentNode
     yes
 

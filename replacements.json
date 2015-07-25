@@ -1,5 +1,12 @@
 [
   {
+    "pattern": "mill?enn?ials'",
+    "replacement": {
+      "text": "snake people's"
+    },
+    "strictCaps": true
+  },
+  {
     "pattern": "mill?enn?ials",
     "replacement": {
       "text": "snake people"
