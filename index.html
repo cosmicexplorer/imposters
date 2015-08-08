@@ -1,151 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-    <style>
-    </style>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <title>IMPOSTERS CONTROL PANEL</title>
-  </head>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/materialize.min.css">
+  <style>
 
-  <body>
+  </style>
 
-    <header>
-      <div class="container">
-        <div class='row'>
-          <div class='col s12 m6 right-align'>
-            <h1>Imposters <br/><small>control panel</small></h1>
-          </div>
-          <div class='col s12 m6 hide-on-small-only'>
-            <p>Replaces more and more of the web until you realize that this is not the true reality, and also that there is no truth.</p>
-          </div>
+  <title>IMPOSTERS CONTROL PANEL</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class='row'>
+        <div class='col s12 m6 right-align'>
+          <h1>Imposters <br/><small>control panel</small></h1>
+        </div>
+        <div class='col s12 m6 hide-on-small-only'>
+          <p>Replaces more and more of the web until you realize that this is not the true reality, and also that there is no truth.</p>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m6 left-align">
-          <span class="card-title">Input</span>
-          <div class="card grey darken-4">
-            <div class="card-content white-text">
-              <form>
-                <div class='row'>
-                  <div class='input-field col s12 l6'>
-                    <input placeholder="" id="pattern" type="text" class="validate">
-                    <label for="pattern">Pattern</label>
-                  </div>
-                  <div class='input-field col s12 l6'>
-                    <input placeholder="" id="replacement" type="text" class="validate">
-                    <label for="replacement">Replacement Text</label>
-                  </div>
-                  <div class='input-field col s12'>
-                    <input type="checkbox" class="filled-in" id="strict-caps" checked="checked" />
-                    <label for="strict-caps">Strict Caps</label>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!-- <div class="card-action right-align"> -->
-              <!-- <a href="#" id='generate'>Generate</a> -->
-            <!-- </div> -->
-          </div>
-        </div>
-        <div class='col s12 m6 left-align' id='output-div'>
-          <span class="card-title">Output</span>
-          <div class="card grey darken-4">
-            <div class="card-content white-text">
-              <pre id='output' style=''>output json</pre> 
-            </div>
-            <div class="card-action right-align">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 left-align">
+        <span class="card-title">Input</span>
+        <div class="card grey darken-4">
+          <div class="card-content white-text">
+            <form>
               <div class='row'>
                 <div class='input-field col s12 l6'>
-                  <input placeholder="" id="password" type="password" class="validate">
-                  <label for="password">Password</label>
+                  <input placeholder="" id="pattern" type="text" class="validate">
+                  <label for="pattern">Pattern</label>
                 </div>
-                <div class='col s12 l6'>
-                  <a href="#" id='commit' class='btn-flat btn-large green white-text'>Commit</a>
+                <div class='input-field col s12 l6'>
+                  <input placeholder="" id="replacement" type="text" class="validate">
+                  <label for="replacement">Replacement Text</label>
                 </div>
+                <div class='input-field col s12'>
+                  <input type="checkbox" class="filled-in" id="strict-caps" checked="checked" />
+                  <label for="strict-caps">Strict Caps</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="card-action right-align"> -->
+          <!-- <a href="#" id='generate'>Generate</a> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      <div class='col s12 m6 left-align' id='output-div'>
+        <span class="card-title">Output</span>
+        <div class="card grey darken-4">
+          <div class="card-content white-text">
+            <pre id='output'></pre>
+          </div>
+          <div class="card-action right-align">
+            <div class='row'>
+              <div class='input-field col s12 l6'>
+                <input placeholder="" id="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+              <div class='col s12 l6'>
+                <a href="#" id='commit' class='btn-flat btn-large green white-text'>Commit</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer class='hide-on-small-only'>
-      <div class='row'>
-        <div class='col s12 center-align'>
-          <pre> _                _                               _       
-| |__   __ _  ___| | _____ _ __ ___    ___  _ __ | |_   _ 
-| '_ \ / _` |/ __| |/ / _ \ '__/ __|  / _ \| '_ \| | | | |
-| | | | (_| | (__|   <  __/ |  \__ \ | (_) | | | | | |_| |
-|_| |_|\__,_|\___|_|\_\___|_|  |___/  \___/|_| |_|_|\__, |
-                                                    |___/ 
+  <footer class='hide-on-small-only'>
+    <div class='row'>
+      <div class='col s12 center-align'>
+        <pre>_                _                               _
+      | |__   __ _  ___| | _____ _ __ ___    ___  _ __ | |_   _
+       | '_ \ / _` |/ __| |/ / _ \ '__/ __|  / _ \| '_ \| | | | |
+       | | | | (_| | (__|   <  __/ |  \__ \ | (_) | | | | | |_| |
+       |_| |_|\__,_|\___|_|\_\___|_|  |___/  \___/|_| |_|_|\__, |
+                                                           |___/
     </pre>
-        </div>
       </div>
-    </footer>
-    
-  </body>
+    </div>
+  </footer>
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+</body>
 
-  <script>
-
-    var obj = { "pattern": "mill?enn?ials'",
-                "replacement": { "text": "snake people's" },
-                "strictCaps": true };
-
-    $('#strict-caps').click(function(e){ generate(); });
-
-    $('input').keyup(function(e) { generate(); });
-
-    $('#commit').click(function(){
-      //highly technical web security stuff, don't bother
-      if( $('#password').val() == 'password' ){
-        alert("Danny write this part :)");
-
-          /////////////////////////////
-         //this is where you come in//
-        /////////////////////////////
-
-      } else {
-        alert('Wrong password, bozo');
-        return;
-      }
-    });
-
-    function generate(){
-      if(!testRegex($('#pattern').val())){
-        alert("Pattern string is not a valid regex");
-        return;
-      }
-
-      obj.pattern = $('#pattern').val();
-      obj.replacement.text = $('#replacement').val();
-      obj.strictCaps = $('#strict-caps').is(':checked');
-
-      $('pre#output').html( JSON.stringify(obj, null, 4) );
-    }
-
-    function testRegex(str){
-      var isValid;
-      try       { new RegExp(str); isValid = true; }
-      catch(e)  { isValid = false;                 }
-      return isValid;
-    }
-
-  </script>
+<script src="javascripts/jquery-2.1.4.min.js"></script>
+<script src="javascripts/materialize.min.js"></script>
+<script src="javascripts/sha3.js"></script>
+<script src="javascripts/aes.js"></script>
+<script src="index.js"></script>
 
 </html>
-
-
-
-
-
