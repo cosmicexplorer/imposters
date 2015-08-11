@@ -40,5 +40,40 @@
       "text": "artisanal meats faire"
     },
     "strictCaps": true
+  },
+  {
+    "pattern": "artificial intelligence",
+    "replacement": {
+      "text": "the vaporwave god"
+    },
+    "strictCaps": true
+  },
+  {
+    "pattern": "the singularity",
+    "replacement": {
+      "text": "reaching orgasm"
+    },
+    "strictCaps": true
+  },
+  {
+    "pattern": "donald trump",
+    "replacement": {
+      "text": "angry orange man"
+    },
+    "strictCaps": true
+  },
+  {
+    "pattern": "devil's advocate",
+    "replacement": {
+      "text": "being a huge asshole"
+    },
+    "strictCaps": true
+  },
+  {
+    "pattern": "social justice",
+    "replacement": {
+      "text": "trying to do the right thing"
+    },
+    "strictCaps": true
   }
 ]
