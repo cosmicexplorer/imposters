@@ -112,6 +112,13 @@
     "strictCaps": true
   },
   {
+    "pattern": "hacking",
+    "replacement": {
+      "text": "necromancing"
+    },
+    "strictCaps": true
+  },
+  {
     "pattern": "hack",
     "replacement": {
       "text": "skeleton"
