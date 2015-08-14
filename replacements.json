@@ -91,6 +91,41 @@
     "strictCaps": true
   },
   {
+    "pattern": "hacker",
+    "replacement": {
+      "text": "necromancer"
+    },
+    "strictCaps": true
+  },
+  {
+    "pattern": "hackers",
+    "replacement": {
+      "text": "necromancers"
+    },
+    "strictCaps": true
+  },
+  {
+    "pattern": "hacked",
+    "replacement": {
+      "text": "necromanced"
+    },
+    "strictCaps": true
+  },
+  {
+    "pattern": "hack",
+    "replacement": {
+      "text": "skeleton"
+    },
+    "strictCaps": true
+  },
+  {
+    "pattern": "hacks",
+    "replacement": {
+      "text": "skeletons"
+    },
+    "strictCaps": true
+  },
+  {
     "pattern": "social justice",
     "replacement": {
       "text": "trying to do the right thing"
