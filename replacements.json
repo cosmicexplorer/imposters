@@ -133,6 +133,20 @@
     "strictCaps": true
   },
   {
+    "pattern": "app",
+    "replacement": {
+      "text": "terrible baby"
+    },
+    "strictCaps": true
+  },
+  {
+    "pattern": "apps",
+    "replacement": {
+      "text": "nightmare children"
+    },
+    "strictCaps": true
+  },
+  {
     "pattern": "social justice",
     "replacement": {
       "text": "trying to do the right thing"
