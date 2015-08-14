@@ -34,7 +34,9 @@ makeFunctionFromReplacementObject = (rplc, strictCaps) -> ->
 
 replaceAllFromJson = (rplc, baseNode, nonRecursive) ->
   changeFns = rplc.map (el) -> (txt) ->
-    txt.replace new RegExp(el.pattern, "gi"),
+    regPat = el.pattern
+    regPat = "\\b" + regPat + "\\b" if el.fullWord
+    txt.replace new RegExp(regPat, "gi"),
       makeFunctionFromReplacementObject(el.replacement, el.strictCaps)
   if nonRecursive
     if isValidNode baseNode

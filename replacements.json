@@ -95,56 +95,64 @@
     "replacement": {
       "text": "necromancer"
     },
-    "strictCaps": true
+    "strictCaps": true,
+    "fullWord": true
   },
   {
     "pattern": "hackers",
     "replacement": {
       "text": "necromancers"
     },
-    "strictCaps": true
+    "strictCaps": true,
+    "fullWord": true
   },
   {
     "pattern": "hacked",
     "replacement": {
       "text": "necromanced"
     },
-    "strictCaps": true
+    "strictCaps": true,
+    "fullWord": true
   },
   {
     "pattern": "hacking",
     "replacement": {
       "text": "necromancing"
     },
-    "strictCaps": true
+    "strictCaps": true,
+    "fullWord": true
   },
   {
     "pattern": "hack",
     "replacement": {
       "text": "skeleton"
     },
-    "strictCaps": true
+    "strictCaps": true,
+    "fullWord": true
   },
   {
     "pattern": "hacks",
     "replacement": {
       "text": "skeletons"
     },
-    "strictCaps": true
+    "strictCaps": true,
+    "fullWord": true
   },
   {
     "pattern": "app",
     "replacement": {
       "text": "terrible baby"
     },
-    "strictCaps": true
+    "strictCaps": true,
+    "fullWord": true
   },
   {
     "pattern": "apps",
     "replacement": {
       "text": "nightmare children"
     },
-    "strictCaps": true
+    "strictCaps": true,
+    "fullWord": true
   },
   {
     "pattern": "social justice",
