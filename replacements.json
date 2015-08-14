@@ -153,5 +153,13 @@
     },
     "strictCaps": true,
     "fullWord": true
+  },
+  {
+    "pattern": "hack",
+    "replacement": {
+      "text": "fuck"
+    },
+    "strictCaps": true,
+    "fullWord": false
   }
 ]
