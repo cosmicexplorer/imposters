@@ -77,6 +77,20 @@
     "strictCaps": true
   },
   {
+    "pattern": "Israel",
+    "replacement": {
+      "text": "Palestine"
+    },
+    "strictCaps": true
+  },
+  {
+    "pattern": "Palestine",
+    "replacement": {
+      "text": "Israel"
+    },
+    "strictCaps": true
+  },
+  {
     "pattern": "social justice",
     "replacement": {
       "text": "trying to do the right thing"
