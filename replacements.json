@@ -153,12 +153,5 @@
     },
     "strictCaps": true,
     "fullWord": true
-  },
-  {
-    "pattern": "social justice",
-    "replacement": {
-      "text": "trying to do the right thing"
-    },
-    "strictCaps": true
   }
 ]
