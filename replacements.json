@@ -70,6 +70,13 @@
     "strictCaps": true
   },
   {
+    "pattern": "the cloud",
+    "replacement": {
+      "text": "the big data ghost in the sky"
+    },
+    "strictCaps": true
+  },
+  {
     "pattern": "social justice",
     "replacement": {
       "text": "trying to do the right thing"
