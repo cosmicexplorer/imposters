@@ -20,10 +20,6 @@ setupReplacements = (setup, success, failure, xhrObj) ->
     console.error
       loaded: 'replacements-from-storage'
       resp: resp
-  # use file:// for testing since it takes a while to propagate to rawgit
-  # considered using rawgit, but it's not automatically pointed at the most
-  # recent commit, which kinda defeats the purpose. we can easily host this on a
-  # dedicated cdn when this becomes incredibly popular
   xhr.open 'get',
     'https://raw.githubusercontent.com/cosmicexplorer/imposters/master/' +
       'replacements.json',
