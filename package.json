@@ -9,5 +9,8 @@
   "devDependencies": {
     "browserify": "^11.0.0",
     "coffee-script": "^1.9.3"
+  },
+  "dependencies": {
+    "replace-all-text-nodes": "^0.0.4"
   }
 }
