@@ -30,7 +30,7 @@ changeFromReplacementsArr = (rplc) ->
 watchNodesAndReplaceText = (rplc) ->
   return unless rplc
   obsv = ReplaceTextNodes.replaceAllInPage changeFromReplacementsArr(rplc),
-    timeouts: [500,100,2000]
+    timeouts: [500,1000,2000]
     futureNodesToo: yes
   setTimeout (-> obsv.observe document,
       childList: on
