@@ -155,10 +155,11 @@
     "fullWord": true
   },
   {
-    "pattern": "social justice",
+    "pattern": "hack",
     "replacement": {
-      "text": "trying to do the right thing"
+      "text": "fuck"
     },
-    "strictCaps": true
+    "strictCaps": true,
+    "fullWord": false
   }
 ]
