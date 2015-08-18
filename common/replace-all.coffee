@@ -8,7 +8,7 @@ makeFunctionFromReplacementObject = (rplc, strictCaps) -> ->
   for el, ind in arguments
     text = text.replace new RegExp("((\\$\\$)*)(\\$#{ind})", "g"), (res, g1) ->
       "#{g1}#{el}"
-  if not strictCaps
+  if strictCaps
     text
   else if arguments[0] is arguments[0].toUpperCase()
     text.toUpperCase()

@@ -3,99 +3,85 @@
     "pattern": "mill?enn?ials'",
     "replacement": {
       "text": "snake people's"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "mill?enn?ials",
     "replacement": {
       "text": "snake people"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "mill?enn?ial",
     "replacement": {
       "text": "snake person"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "cloud",
     "replacement": {
       "text": "butt"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "James Adam Buckland",
     "replacement": {
       "text": "Jerk Asshole Fuckland"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "sausage fest",
     "replacement": {
       "text": "artisanal meats faire"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "artificial intelligence",
     "replacement": {
       "text": "the vaporwave god"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "the singularity",
     "replacement": {
       "text": "reaching orgasm"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "donald trump",
     "replacement": {
       "text": "angry orange man"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "devil's advocate",
     "replacement": {
       "text": "being a huge asshole"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "the cloud",
     "replacement": {
       "text": "the big data ghost in the sky"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "Israel",
     "replacement": {
       "text": "Palestine"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "Palestine",
     "replacement": {
       "text": "Israel"
-    },
-    "strictCaps": true
+    }
   },
   {
     "pattern": "hacker",
     "replacement": {
       "text": "necromancer"
     },
-    "strictCaps": true,
     "fullWord": true
   },
   {
@@ -103,7 +89,6 @@
     "replacement": {
       "text": "necromancers"
     },
-    "strictCaps": true,
     "fullWord": true
   },
   {
@@ -111,7 +96,6 @@
     "replacement": {
       "text": "necromanced"
     },
-    "strictCaps": true,
     "fullWord": true
   },
   {
@@ -119,7 +103,6 @@
     "replacement": {
       "text": "necromancing"
     },
-    "strictCaps": true,
     "fullWord": true
   },
   {
@@ -127,7 +110,6 @@
     "replacement": {
       "text": "skeleton"
     },
-    "strictCaps": true,
     "fullWord": true
   },
   {
@@ -135,7 +117,6 @@
     "replacement": {
       "text": "skeletons"
     },
-    "strictCaps": true,
     "fullWord": true
   },
   {
@@ -143,7 +124,6 @@
     "replacement": {
       "text": "terrible baby"
     },
-    "strictCaps": true,
     "fullWord": true
   },
   {
@@ -151,7 +131,6 @@
     "replacement": {
       "text": "nightmare children"
     },
-    "strictCaps": true,
     "fullWord": true
   },
   {
@@ -159,7 +138,6 @@
     "replacement": {
       "text": "fuck"
     },
-    "strictCaps": true,
     "fullWord": false
   }
 ]
