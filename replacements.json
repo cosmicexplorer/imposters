@@ -1,192 +1,166 @@
-[
-  {
-    "pattern": "mill?enn?ials'",
-    "replacement": {
-      "text": "snake people's"
-    }
-  },
-  {
-    "pattern": "mill?enn?ials",
-    "replacement": {
-      "text": "snake people"
-    }
-  },
-  {
-    "pattern": "mill?enn?ial",
-    "replacement": {
-      "text": "snake person"
-    }
-  },
-  {
-    "pattern": "cloud",
-    "replacement": {
-      "text": "butt"
-    }
-  },
-  {
-    "pattern": "James Adam Buckland",
-    "replacement": {
-      "text": "Jerk Asshole Fuckland"
-    }
-  },
-  {
-    "pattern": "sausage fest",
-    "replacement": {
-      "text": "artisanal meats faire"
-    }
-  },
-  {
-    "pattern": "artificial intelligence",
-    "replacement": {
-      "text": "the vaporwave god"
-    }
-  },
-  {
-    "pattern": "the singularity",
-    "replacement": {
-      "text": "reaching orgasm"
-    }
-  },
-  {
-    "pattern": "donald trump",
-    "replacement": {
-      "text": "angry orange man"
-    }
-  },
-  {
-    "pattern": "devil's advocate",
-    "replacement": {
-      "text": "being a huge asshole"
-    }
-  },
-  {
-    "pattern": "the cloud",
-    "replacement": {
-      "text": "the big data ghost in the sky"
-    }
-  },
-  {
-    "pattern": "Israel",
-    "replacement": {
-      "text": "Palestine"
-    }
-  },
-  {
-    "pattern": "Palestine",
-    "replacement": {
-      "text": "Israel"
-    }
-  },
-  {
-    "pattern": "hacker",
-    "replacement": {
-      "text": "necromancer"
-    },
-    "fullWord": true
-  },
-  {
-    "pattern": "hackers",
-    "replacement": {
-      "text": "necromancers"
-    },
-    "fullWord": true
-  },
-  {
-    "pattern": "hacked",
-    "replacement": {
-      "text": "necromanced"
-    },
-    "fullWord": true
-  },
-  {
-    "pattern": "hacking",
-    "replacement": {
-      "text": "necromancing"
-    },
-    "fullWord": true
-  },
-  {
-    "pattern": "hack",
-    "replacement": {
-      "text": "skeleton"
-    },
-    "fullWord": true
-  },
-  {
-    "pattern": "hacks",
-    "replacement": {
-      "text": "skeletons"
-    },
-    "fullWord": true
-  },
-  {
-    "pattern": "app",
-    "replacement": {
-      "text": "terrible baby"
-    },
-    "fullWord": true
-  },
-  {
-    "pattern": "apps",
-    "replacement": {
-      "text": "nightmare children"
-    },
-    "fullWord": true
-  },
-  {
-    "pattern": "hack",
-    "replacement": {
-      "text": "fuck"
-    },
-    "fullWord": false
-  },
-  {
-    "pattern": "poc",
-    "replacement": {
-      "text": "pos"
-    },
-    "fullWord": true
-  },
-  {
-    "pattern": "Hillary Clinton",
-    "replacement": {
-      "text": "Bernie Sanders"
-    }
-  },
-  {
-    "pattern": "Clinton",
-    "replacement": {
-      "text": "Sanders"
-    }
-  },
-  {
-    "pattern": "Hillary",
-    "replacement": {
-      "text": "Bernie"
-    }
-  },
-  {
-    "pattern": "Faye",
-    "replacement": {
-      "text": "Joey"
-    }
-  },
-  {
-    "pattern": "Joey",
-    "replacement": {
-      "text": "Faye"
-    }
-  },
-  {
-    "pattern": "Faye Eigart",
-    "replacement": {
-      "text": "Joey Fridman"
-    }
-  },
-  {
-    "pattern": "Joey Fridman",
-    "replacement": {
-      "text": "Faye Eigart"
-    }
+[{
+  "pattern": "mill?enn?ials'",
+  "replacement": {
+    "text": "snake people's"
   }
-]
+}, {
+  "pattern": "mill?enn?ials",
+  "replacement": {
+    "text": "snake people"
+  }
+}, {
+  "pattern": "mill?enn?ial",
+  "replacement": {
+    "text": "snake person"
+  }
+}, {
+  "pattern": "cloud",
+  "replacement": {
+    "text": "butt"
+  }
+}, {
+  "pattern": "James Adam Buckland",
+  "replacement": {
+    "text": "Jerk Asshole Fuckland"
+  }
+}, {
+  "pattern": "sausage fest",
+  "replacement": {
+    "text": "artisanal meats faire"
+  }
+}, {
+  "pattern": "artificial intelligence",
+  "replacement": {
+    "text": "the vaporwave god"
+  }
+}, {
+  "pattern": "the singularity",
+  "replacement": {
+    "text": "reaching orgasm"
+  }
+}, {
+  "pattern": "donald trump",
+  "replacement": {
+    "text": "angry orange man"
+  }
+}, {
+  "pattern": "devil's advocate",
+  "replacement": {
+    "text": "being a huge asshole"
+  }
+}, {
+  "pattern": "the cloud",
+  "replacement": {
+    "text": "the big data ghost in the sky"
+  }
+}, {
+  "pattern": "Israel",
+  "replacement": {
+    "text": "Palestine"
+  }
+}, {
+  "pattern": "Palestine",
+  "replacement": {
+    "text": "Israel"
+  }
+}, {
+  "pattern": "hacker",
+  "replacement": {
+    "text": "necromancer"
+  },
+  "fullWord": true
+}, {
+  "pattern": "hackers",
+  "replacement": {
+    "text": "necromancers"
+  },
+  "fullWord": true
+}, {
+  "pattern": "hacked",
+  "replacement": {
+    "text": "necromanced"
+  },
+  "fullWord": true
+}, {
+  "pattern": "hacking",
+  "replacement": {
+    "text": "necromancing"
+  },
+  "fullWord": true
+}, {
+  "pattern": "hack",
+  "replacement": {
+    "text": "skeleton"
+  },
+  "fullWord": true
+}, {
+  "pattern": "hacks",
+  "replacement": {
+    "text": "skeletons"
+  },
+  "fullWord": true
+}, {
+  "pattern": "app",
+  "replacement": {
+    "text": "terrible baby"
+  },
+  "fullWord": true
+}, {
+  "pattern": "apps",
+  "replacement": {
+    "text": "nightmare children"
+  },
+  "fullWord": true
+}, {
+  "pattern": "hack",
+  "replacement": {
+    "text": "fuck"
+  },
+  "fullWord": false
+}, {
+  "pattern": "poc",
+  "replacement": {
+    "text": "pos"
+  },
+  "fullWord": true
+}, {
+  "pattern": "Hillary Clinton",
+  "replacement": {
+    "text": "Bernie Sanders"
+  }
+}, {
+  "pattern": "Bernie Sanders",
+  "replacement": {
+    "text": "Hillary Clinton"
+  }
+}, {
+  "pattern": "Clinton",
+  "replacement": {
+    "text": "Sanders"
+  }
+}, {
+  "pattern": "Hillary",
+  "replacement": {
+    "text": "Bernie"
+  }
+}, {
+  "pattern": "Faye Elgart",
+  "replacement": {
+    "text": "Joey Fridman"
+  }
+}, {
+  "pattern": "Joey Fridman",
+  "replacement": {
+    "text": "Faye Elgart"
+  }
+}, {
+  "pattern": "Faye",
+  "replacement": {
+    "text": "Joey"
+  }
+}, {
+  "pattern": "Joey",
+  "replacement": {
+    "text": "Faye"
+  }
+}]
