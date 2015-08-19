@@ -146,5 +146,47 @@
       "text": "pos"
     },
     "fullWord": true
+  },
+  {
+    "pattern": "Hillary Clinton",
+    "replacement": {
+      "text": "Bernie Sanders"
+    }
+  },
+  {
+    "pattern": "Clinton",
+    "replacement": {
+      "text": "Sanders"
+    }
+  },
+  {
+    "pattern": "Hillary",
+    "replacement": {
+      "text": "Bernie"
+    }
+  },
+  {
+    "pattern": "Faye",
+    "replacement": {
+      "text": "Joey"
+    }
+  },
+  {
+    "pattern": "Joey",
+    "replacement": {
+      "text": "Faye"
+    }
+  },
+  {
+    "pattern": "Faye Eigart",
+    "replacement": {
+      "text": "Joey Fridman"
+    }
+  },
+  {
+    "pattern": "Joey Fridman",
+    "replacement": {
+      "text": "Faye Eigart"
+    }
   }
 ]
