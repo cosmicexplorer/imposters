@@ -139,5 +139,12 @@
       "text": "fuck"
     },
     "fullWord": false
+  },
+  {
+    "pattern": "poc",
+    "replacement": {
+      "text": "pos"
+    },
+    "fullWord": true
   }
 ]
