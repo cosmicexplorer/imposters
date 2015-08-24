@@ -4,18 +4,18 @@ ReplaceTextNodes = require 'replace-all-text-nodes'
 # literally the most insecure thing ever to do in the world, so here's an
 # attempt to make it less bad
 makeFunctionFromReplacementObject = (rplc, strictCaps) -> ->
+  # arguments will be the arguments passed to a regex replace
   text = rplc.text
   for el, ind in arguments
     text = text.replace new RegExp("((\\$\\$)*)(\\$#{ind})", "g"), (res, g1) ->
       "#{g1}#{el}"
-  if strictCaps
+  if strictCaps # maintain capitalization of replacement text always
     text
-  else if arguments[0] is arguments[0].toUpperCase()
+  else if arguments[0] is arguments[0].toUpperCase() # all caps
     text.toUpperCase()
-  else if arguments[0][0] is arguments[0][0].toUpperCase()
+  else if arguments[0][0] is arguments[0][0].toUpperCase() # initial caps
     text.replace /\b./g, (match) -> match.toUpperCase()
-  else
-    text
+  else text
 
 changeFromReplacementsArr = (rplc) ->
   changeFns = rplc.map (el) -> (txt) ->
