@@ -39,7 +39,7 @@
     "text": "reaching orgasm"
   }
 }, {
-  "pattern": "donald trump",
+  "pattern": "donald ([^\\\\s]+)? trump",
   "replacement": {
     "text": "angry orange man"
   }
