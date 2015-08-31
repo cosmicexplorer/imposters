@@ -173,4 +173,44 @@
   "replacement": {
     "text": "Faye"
   }
+}, {
+  "pattern": "him",
+  "replacement": {
+    "text": "her"
+  }
+}, {
+  "pattern": "her",
+  "replacement": {
+    "text": "him"
+  }
+}, {
+  "pattern": "his",
+  "replacement": {
+    "text": "hers"
+  }
+}, {
+  "pattern": "hers",
+  "replacement": {
+    "text": "his"
+  }
+}, {
+  "pattern": "he",
+  "replacement": {
+    "text": "she"
+  }
+}, {
+  "pattern": "she",
+  "replacement": {
+    "text": "he"
+  }
+}, {
+  "pattern": "himself",
+  "replacement": {
+    "text": "herself"
+  }
+}, {
+  "pattern": "herself",
+  "replacement": {
+    "text": "himself"
+  }
 }]
