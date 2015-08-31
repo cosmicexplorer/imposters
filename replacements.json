@@ -144,6 +144,16 @@
     "text": "Bernie"
   }
 }, {
+  "pattern": "Sanders",
+  "replacement": {
+    "text": "Clinton"
+  }
+}, {
+  "pattern": "Bernie",
+  "replacement": {
+    "text": "Hillary"
+  }
+}, {
   "pattern": "Faye Elgart",
   "replacement": {
     "text": "Joey Fridman"
