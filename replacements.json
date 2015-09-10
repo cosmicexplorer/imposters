@@ -14,6 +14,11 @@
     "text": "snake person"
   }
 }, {
+  "pattern": "the cloud",
+  "replacement": {
+    "text": "the big data ghost in the sky"
+  }
+}, {
   "pattern": "cloud",
   "replacement": {
     "text": "butt"
@@ -47,11 +52,6 @@
   "pattern": "devil's advocate",
   "replacement": {
     "text": "being a huge asshole"
-  }
-}, {
-  "pattern": "the cloud",
-  "replacement": {
-    "text": "the big data ghost in the sky"
   }
 }, {
   "pattern": "Israel",
