@@ -174,13 +174,18 @@
     "text": "Faye"
   }
 }, {
-  "pattern": "algorithm",
+  "pattern": "algorithmic",
   "replacement": {
-    "text": "thing used for coding interviews"
+    "text": "like a thing used for coding interviews"
   }
 }, {
   "pattern": "algorithms",
   "replacement": {
     "text": "things used for coding interviews"
+  }
+}, {
+  "pattern": "algorithm",
+  "replacement": {
+    "text": "thing used for coding interviews"
   }
 }]
