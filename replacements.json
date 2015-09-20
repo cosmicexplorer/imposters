@@ -173,4 +173,14 @@
   "replacement": {
     "text": "Faye"
   }
+}, {
+  "pattern": "algorithm",
+  "replacement": {
+    "text": "thing used for coding interviews"
+  }
+}, {
+  "pattern": "algorithms",
+  "replacement": {
+    "text": "things used for coding interviews"
+  }
 }]
