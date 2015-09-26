@@ -126,52 +126,52 @@
 }, {
   "pattern": "Hillary Clinton",
   "replacement": {
-    "text": "Bernie Sanders"
+    "text": "Bernie ​Sanders"
   }
 }, {
   "pattern": "Bernie Sanders",
   "replacement": {
-    "text": "Hillary Clinton"
+    "text": "Hillary ​Clinton"
   }
 }, {
   "pattern": "Clinton",
   "replacement": {
-    "text": "Sanders"
+    "text": "San​ders"
   }
 }, {
   "pattern": "Hillary",
   "replacement": {
-    "text": "Bernie"
+    "text": "Ber​nie"
   }
 }, {
   "pattern": "Sanders",
   "replacement": {
-    "text": "Clinton"
+    "text": "Cli​nton"
   }
 }, {
   "pattern": "Bernie",
   "replacement": {
-    "text": "Hillary"
+    "text": "Hil​lary"
   }
 }, {
   "pattern": "Faye Elgart",
   "replacement": {
-    "text": "Joey Fridman"
+    "text": "Joey ​Fridman"
   }
 }, {
   "pattern": "Joey Fridman",
   "replacement": {
-    "text": "Faye Elgart"
+    "text": "Faye ​Elgart"
   }
 }, {
   "pattern": "Faye",
   "replacement": {
-    "text": "Joey"
+    "text": "Jo​ey"
   }
 }, {
   "pattern": "Joey",
   "replacement": {
-    "text": "Faye"
+    "text": "Fa​ye"
   }
 }, {
   "pattern": "an algorithm",
