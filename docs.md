@@ -19,4 +19,4 @@ The hope is that this extension will be able to avoid upgrades, possibly forever
 
 ### strictCaps
 
-If `strictCaps` is set to `true` or some other truthy value, when the first letter of the match is capitalized, all words in the replacement text have their first letter capitalized.
+If `strictCaps` is set to `false` or undefined, when the first letter of the match is capitalized, all words in the replacement text have their first letter capitalized. If true, the capitalization of the replacement text is always exactly what is given in `replacements.json`.
