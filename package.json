@@ -11,6 +11,6 @@
     "coffee-script": "^1.9.3"
   },
   "dependencies": {
-    "replace-all-text-nodes": "^0.0.7"
+    "replace-all-text-nodes": "^0.0.8"
   }
 }
