@@ -49,11 +49,6 @@
     "text": "orgasm"
   }
 }, {
-  "pattern": "the singularity",
-  "replacement": {
-    "text": "reaching orgasm"
-  }
-}, {
   "pattern": "donald ([^\\\\s]+)? trump",
   "replacement": {
     "text": "angry orange man"
