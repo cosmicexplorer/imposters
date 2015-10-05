@@ -39,12 +39,12 @@
     "text": "the vaporwave god"
   }
 }, {
-  "pattern": "the (technological)? singularity",
+  "pattern": "(the |the technological )singularity",
   "replacement": {
     "text": "reaching orgasm"
   }
 }, {
-  "pattern": "singularity",
+  "pattern": "(technological )?singularity",
   "replacement": {
     "text": "orgasm"
   }
