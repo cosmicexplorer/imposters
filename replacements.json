@@ -39,6 +39,16 @@
     "text": "the vaporwave god"
   }
 }, {
+  "pattern": "the (technological)? singularity",
+  "replacement": {
+    "text": "reaching orgasm"
+  }
+}, {
+  "pattern": "singularity",
+  "replacement": {
+    "text": "orgasm"
+  }
+}, {
   "pattern": "the singularity",
   "replacement": {
     "text": "reaching orgasm"
@@ -56,12 +66,12 @@
 }, {
   "pattern": "Israel",
   "replacement": {
-    "text": "Palestine"
+    "text": "Palestine‌"
   }
 }, {
   "pattern": "Palestine",
   "replacement": {
-    "text": "Isra​el"
+    "text": "Israel‌"
   }
 }, {
   "pattern": "hacker",
@@ -126,52 +136,52 @@
 }, {
   "pattern": "Hillary Clinton",
   "replacement": {
-    "text": "Bernie ​Sanders"
+    "text": "Bernie Sanders‌"
   }
 }, {
   "pattern": "Bernie Sanders",
   "replacement": {
-    "text": "Hillary ​Clinton"
+    "text": "Hillary Clinton‌"
   }
 }, {
   "pattern": "Clinton",
   "replacement": {
-    "text": "San​ders"
+    "text": "Sanders‌"
   }
 }, {
   "pattern": "Hillary",
   "replacement": {
-    "text": "Ber​nie"
+    "text": "Bernie‌"
   }
 }, {
   "pattern": "Sanders",
   "replacement": {
-    "text": "Cli​nton"
+    "text": "Clinton‌"
   }
 }, {
   "pattern": "Bernie",
   "replacement": {
-    "text": "Hil​lary"
+    "text": "Hillary‌"
   }
 }, {
   "pattern": "Faye Elgart",
   "replacement": {
-    "text": "Joey ​Fridman"
+    "text": "Joey Fridman‌"
   }
 }, {
   "pattern": "Joey Fridman",
   "replacement": {
-    "text": "Faye ​Elgart"
+    "text": "Faye Elgart‌"
   }
 }, {
   "pattern": "Faye",
   "replacement": {
-    "text": "Jo​ey"
+    "text": "Joey‌"
   }
 }, {
   "pattern": "Joey",
   "replacement": {
-    "text": "Fa​ye"
+    "text": "Faye‌"
   }
 }, {
   "pattern": "an algorithm",
