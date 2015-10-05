@@ -64,16 +64,6 @@
     "text": "being a huge asshole"
   }
 }, {
-  "pattern": "Israel",
-  "replacement": {
-    "text": "Pales‌tine"
-  }
-}, {
-  "pattern": "Palestine",
-  "replacement": {
-    "text": "Isr‌ael"
-  }
-}, {
   "pattern": "hacker",
   "replacement": {
     "text": "necromancer"
