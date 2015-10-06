@@ -150,4 +150,11 @@
   "replacement": {
     "text": "thing used for coding interviews"
   }
+}, {
+  "pattern": "API",
+  "replacement": {
+    "text": "Chaos Emerald"
+  },
+  "fullWord": true,
+  "strictCaps": true
 }]
