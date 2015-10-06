@@ -157,4 +157,11 @@
   },
   "fullWord": true,
   "strictCaps": true
+}, {
+  "pattern": "APIs",
+  "replacement": {
+    "text": "Chaos Emeralds"
+  },
+  "fullWord": true,
+  "strictCaps": true
 }]
