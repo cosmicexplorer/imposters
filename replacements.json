@@ -164,4 +164,18 @@
   },
   "fullWord": true,
   "strictCaps": true
+}, {
+  "pattern": "SDK",
+  "replacement": {
+    "text": "door to the abyss"
+  },
+  "fullWord": true,
+  "strictCaps": true
+}, {
+  "pattern": "SDKs",
+  "replacement": {
+    "text": "doors to the abyss"
+  },
+  "fullWord": true,
+  "strictCaps": true
 }]
