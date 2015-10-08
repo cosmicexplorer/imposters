@@ -107,6 +107,11 @@
   },
   "fullWord": true
 }, {
+  "pattern": "an app",
+  "replacement": {
+    "text": "a terrible baby"
+  }
+}, {
   "pattern": "app",
   "replacement": {
     "text": "terrible baby"
