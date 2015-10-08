@@ -110,7 +110,8 @@
   "pattern": "an app",
   "replacement": {
     "text": "a terrible baby"
-  }
+  },
+  "fullWord": true
 }, {
   "pattern": "app",
   "replacement": {
