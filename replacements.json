@@ -144,22 +144,22 @@
 }, {
   "pattern": "an algorithm",
   "replacement": {
-    "text": "a thing used for coding interviews"
+    "text": "some coding interview thing"
   }
 }, {
   "pattern": "algorithmic",
   "replacement": {
-    "text": "like a thing used for coding interviews"
+    "text": "coding interview-like"
   }
 }, {
   "pattern": "algorithms",
   "replacement": {
-    "text": "things used for coding interviews"
+    "text": "coding interview things"
   }
 }, {
   "pattern": "algorithm",
   "replacement": {
-    "text": "thing used for coding interviews"
+    "text": "coding interview thing"
   }
 }, {
   "pattern": "API",
