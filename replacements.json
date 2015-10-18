@@ -29,6 +29,11 @@
     "text": "Jerk Asshole Fuckland"
   }
 }, {
+  "pattern": "Benjamin Zweig",
+  "replacement": {
+    "text": "Designer Douchebag"
+  }
+}, {
   "pattern": "sausage fest",
   "replacement": {
     "text": "artisanal meats faire"
