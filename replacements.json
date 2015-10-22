@@ -39,6 +39,11 @@
     "text": "artisanal meats faire"
   }
 }, {
+  "pattern": "Danny McClanahan",
+  "replacement": {
+    "text": "Hacker Idiot"
+  }
+}, {
   "pattern": "artificial intelligence",
   "replacement": {
     "text": "the vaporwave god"
