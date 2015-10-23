@@ -34,14 +34,14 @@
     "text": "Ben Zweeg"
   }
 }, {
+  "pattern": "Danny McClanahan",
+  "replacement": {
+    "text": "Deranged Monstrosity"
+  }
+}, {
   "pattern": "sausage fest",
   "replacement": {
     "text": "artisanal meats faire"
-  }
-}, {
-  "pattern": "Danny McClanahan",
-  "replacement": {
-    "text": "Computer Idiot"
   }
 }, {
   "pattern": "artificial intelligence",
