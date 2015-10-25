@@ -167,6 +167,12 @@
     "text": "coding interview thing"
   }
 }, {
+  "pattern": "an API",
+  "replacement": {
+    "text": "a Chaos Emerald"
+  },
+  "fullWord": true
+}, {
   "pattern": "API",
   "replacement": {
     "text": "Chaos Emerald"
@@ -180,6 +186,12 @@
   },
   "fullWord": true,
   "strictCaps": true
+}, {
+  "pattern": "an SDK",
+  "replacement": {
+    "text": "a door to the abyss"
+  },
+  "fullWord": true
 }, {
   "pattern": "SDK",
   "replacement": {
