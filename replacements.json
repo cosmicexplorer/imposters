@@ -49,10 +49,22 @@
     "text": "artisanal meats faire"
   }
 }, {
+  "pattern": "an artificial intelligence",
+  "replacement": {
+    "text": "a vaporwave god"
+  }
+}, {
   "pattern": "artificial intelligence",
   "replacement": {
     "text": "the vaporwave god"
   }
+}, {
+  "pattern": "an AI",
+  "replacement": {
+    "text": "some manly unicorn tears"
+  },
+  "fullWord": true,
+  "strictCaps": true
 }, {
   "pattern": "AI",
   "replacement": {
