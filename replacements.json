@@ -19,6 +19,11 @@
     "text": "the big data ghost in the sky"
   }
 }, {
+  "pattern": "the clouds",
+  "replacement": {
+    "text": "the big data ghosts in the sky"
+  }
+}, {
   "pattern": "cloud",
   "replacement": {
     "text": "butt"
