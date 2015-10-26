@@ -49,6 +49,11 @@
     "text": "artisanal meats faire"
   }
 }, {
+  "pattern": "machine learning",
+  "replacement": {
+    "text": "colossal squid attacks"
+  }
+}, {
   "pattern": "an artificial intelligence",
   "replacement": {
     "text": "a vaporwave god"
