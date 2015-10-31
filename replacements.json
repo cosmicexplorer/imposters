@@ -31,7 +31,7 @@
 }, {
   "pattern": "James Adam Buckland",
   "replacement": {
-    "text": "buckaroo"
+    "text": "bucklandia"
   }
 }, {
   "pattern": "Benjamin Zweig",
@@ -71,14 +71,14 @@
 }, {
   "pattern": "an AI",
   "replacement": {
-    "text": "some manly unicorn tears"
+    "text": "a vaporwave god"
   },
   "fullWord": true,
   "strictCaps": true
 }, {
   "pattern": "AI",
   "replacement": {
-    "text": "manly unicorn tears"
+    "text": "the vaporwave god"
   },
   "fullWord": true,
   "strictCaps": true
