@@ -174,14 +174,14 @@
   },
   "fullWord": true
 }, {
-  "pattern": "an algorithm",
-  "replacement": {
-    "text": "some coding interview thing"
-  }
-}, {
   "pattern": "algorithmic",
   "replacement": {
     "text": "coding interview-like"
+  }
+}, {
+  "pattern": "an algorithm",
+  "replacement": {
+    "text": "some coding interview thing"
   }
 }, {
   "pattern": "algorithms",
