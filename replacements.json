@@ -49,12 +49,12 @@
     "text": "artisanal meats faire"
   }
 }, {
-  "pattern": "deep learning",
+  "pattern": "deep( |\\-)learning",
   "replacement": {
     "text": "cultural appropriation"
   }
 }, {
-  "pattern": "machine learning",
+  "pattern": "machine( |\\-)learning",
   "replacement": {
     "text": "colossal squid attacks"
   }
