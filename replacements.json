@@ -88,14 +88,14 @@
     "text": "reaching orgasm"
   }
 }, {
-  "pattern": "(technological )?singularity",
-  "replacement": {
-    "text": "orgasm"
-  }
-}, {
   "pattern": "a (technological )?singularity",
   "replacement": {
     "text": "an orgasm"
+  }
+}, {
+  "pattern": "(technological )?singularity",
+  "replacement": {
+    "text": "orgasm"
   }
 }, {
   "pattern": "donald ([^\\\\s]+)? trump",
