@@ -238,4 +238,123 @@
   },
   "fullWord": true,
   "strictCaps": true
+}, {
+  "pattern": "debate",
+  "replacement" : {
+    "text": "dance-off"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "self driving",
+  "replacement" : {
+    "text": "uncontrollably swerving"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "poll",
+  "replacement" : {
+    "text": "psychic reading"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "candidate",
+  "replacement" : {
+    "text": "airbender"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "drone",
+  "replacement" : {
+    "text": "dog"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "vows to",
+  "replacement" : {
+    "text": "probably won't"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "at large",
+  "replacement" : {
+    "text": "very large"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "successfully",
+  "replacement" : {
+    "text": "suddenly"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "expands",
+  "replacement" : {
+    "text": "physically expands"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "first-degree",
+  "replacement" : {
+    "text": "friggin' awful"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "second-degree",
+  "replacement" : {
+    "text": "friggin' awful"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "third-degree",
+  "replacement" : {
+    "text": "friggin' awful"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "an unknown number",
+  "replacement" : {
+    "text": "like hundreds"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "front runner",
+  "replacement" : {
+    "text": "blade runner"
+  },
+  "fullWord": true,
+  "strictCaps": false
+},{
+  "pattern": "no indication",
+  "replacement" : {
+    "text": "lots of signs"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "urged restraint by",
+  "replacement" : {
+    "text": "drunkenly egged on"
+  },
+  "fullWord": true,
+  "strictCaps": false
+}, {
+  "pattern": "horsepower",
+  "replacement" : {
+    "text": "tons of horsemeat"
+  },
+  "fullWord": true,
+  "strictCaps": false
 }]
