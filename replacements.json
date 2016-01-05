@@ -243,118 +243,191 @@
   "replacement" : {
     "text": "dance-off"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "self driving",
   "replacement" : {
     "text": "uncontrollably swerving"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "poll",
   "replacement" : {
     "text": "psychic reading"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "candidate",
   "replacement" : {
     "text": "airbender"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "drone",
   "replacement" : {
     "text": "dog"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "vows to",
   "replacement" : {
     "text": "probably won't"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "at large",
   "replacement" : {
     "text": "very large"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "successfully",
   "replacement" : {
     "text": "suddenly"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "expands",
   "replacement" : {
     "text": "physically expands"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "first-degree",
   "replacement" : {
     "text": "friggin' awful"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "second-degree",
   "replacement" : {
     "text": "friggin' awful"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "third-degree",
   "replacement" : {
     "text": "friggin' awful"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "an unknown number",
   "replacement" : {
     "text": "like hundreds"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "front runner",
   "replacement" : {
     "text": "blade runner"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 },{
   "pattern": "no indication",
   "replacement" : {
     "text": "lots of signs"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "urged restraint by",
   "replacement" : {
     "text": "drunkenly egged on"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
 }, {
   "pattern": "horsepower",
   "replacement" : {
     "text": "tons of horsemeat"
   },
-  "fullWord": true,
-  "strictCaps": false
+  "fullWord": true
+}, {
+  "pattern": "witnesses",
+  "replacement": {
+    "text": "these guys I know"
+  },
+  "fullWord": true
+}, {
+  "pattern": "witness",
+  "replacement": {
+    "text": "this guy I know"
+  },
+  "fullWord": true
+}, {
+  "pattern": "allegedly",
+  "replacement": {
+    "text": "kinda probably"
+  },
+  "fullWord": true
+}, {
+  "pattern": "new study",
+  "replacement": {
+    "text": "tumblr post"
+  },
+  "fullWord": true
+}, {
+  "pattern": "rebuild",
+  "replacement": {
+    "text": "avenge"
+  },
+  "fullWord": true
+}, {
+  "pattern": "space",
+  "replacement": {
+    "text": "spaaace"
+  },
+  "fullWord": true
+}, {
+  "pattern": "google glass",
+  "replacement": {
+    "text": "virtual boy"
+  },
+  "fullWord": true
+}, {
+  "pattern": "smart\\s*phone",
+  "replacement": {
+    "text": "pokédex"
+  },
+  "fullWord": true
+}, {
+  "pattern": "electric",
+  "replacement": {
+    "text": "atomic"
+  },
+  "fullWord": true
+}, {
+  "pattern": "senator",
+  "replacement": {
+    "text": "elf-lord"
+  },
+  "fullWord": true
+}, {
+  "pattern": "car",
+  "replacement": {
+    "text": "cat"
+  },
+  "fullWord": true
+}, {
+  "pattern": "election",
+  "replacement": {
+    "text": "eating contest"
+  },
+  "fullWord": true
+}, {
+  "pattern": "congressional leaders",
+  "replacement": {
+    "text": "river spirits"
+  },
+  "fullWord": true
+}, {
+  "pattern": "homeland security",
+  "replacement": {
+    "text": "homestar runner"
+  },
+  "fullWord": true
+}, {
+  "pattern": "could not be reached for comment",
+  "replacement": {
+    "text": "is guilty and everyone knows it"
+  },
+  "fullWord": true
 }]
