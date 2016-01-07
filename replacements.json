@@ -430,4 +430,16 @@
     "text": "is guilty and everyone knows it"
   },
   "fullWord": true
+}, {
+  "pattern": "israel",
+  "replacement": {
+    "text": "p⁠alestine"
+  },
+  "fullWord": true
+}, {
+  "pattern": "palestine",
+  "replacement": {
+    "text": "i⁠srael"
+  },
+  "fullWord": true
 }]
