@@ -401,12 +401,6 @@
   },
   "fullWord": true
 }, {
-  "pattern": "car",
-  "replacement": {
-    "text": "cat"
-  },
-  "fullWord": true
-}, {
   "pattern": "election",
   "replacement": {
     "text": "eating contest"
