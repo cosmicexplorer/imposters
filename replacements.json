@@ -287,12 +287,6 @@
   },
   "fullWord": true
 }, {
-  "pattern": "expands",
-  "replacement" : {
-    "text": "physically expands"
-  },
-  "fullWord": true
-}, {
   "pattern": "first-degree",
   "replacement" : {
     "text": "friggin' awful"
