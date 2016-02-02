@@ -281,12 +281,6 @@
   },
   "fullWord": true
 }, {
-  "pattern": "successfully",
-  "replacement" : {
-    "text": "suddenly"
-  },
-  "fullWord": true
-}, {
   "pattern": "first-degree",
   "replacement" : {
     "text": "friggin' awful"
