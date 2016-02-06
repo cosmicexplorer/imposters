@@ -412,4 +412,9 @@
     "text": "is guilty and everyone knows it"
   },
   "fullWord": true
+}, {
+  "pattern": "political correctness",
+  "replacement": {
+    "text": "treating people with respect"
+  }
 }]
