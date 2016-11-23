@@ -417,4 +417,19 @@
   "replacement": {
     "text": "treating people with respect"
   }
+}, {
+  "pattern": "alt-right movement",
+  "replacement": {
+    "text": "white supremacist movement"
+  }
+}, {
+  "pattern": "the alt-right",
+  "replacement": {
+    "text": "white supremacists"
+  }
+}, {
+  "pattern": "alt-right",
+  "replacement": {
+    "text": "white supremacist"
+  }
 }]
