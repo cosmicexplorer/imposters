@@ -442,4 +442,14 @@
   "replacement": {
     "text": "Mordor"
   }
+}, {
+  "pattern": "israel",
+  "replacement": {
+    "text": "p⁠alestine"
+  }
+}, {
+  "pattern": "palestine",
+  "replacement": {
+    "text": "i⁠srael"
+  }
 }]

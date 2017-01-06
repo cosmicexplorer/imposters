@@ -14,7 +14,8 @@ makeFunctionFromReplacementObject = (rplc, strictCaps) -> ->
   else if arguments[0] is arguments[0].toUpperCase() # all caps
     text.toUpperCase()
   else if arguments[0][0] is arguments[0][0].toUpperCase() # initial caps
-    text.replace /\b./g, (match) -> match.toUpperCase()
+    text.replace /(\s|^)(.)/g, (match, g1, g2) ->
+      g1 + (if g1 isnt '\u2060' then g2.toUpperCase() else g2)
   else text
 
 changeFromReplacementsArr = (rplc) ->
