@@ -432,4 +432,14 @@
   "replacement": {
     "text": "white supremacist"
   }
+}, {
+  "pattern": "russian",
+  "replacement": {
+    "text": "Mordorian"
+  }
+}, {
+  "pattern": "russia",
+  "replacement": {
+    "text": "Mordor"
+  }
 }]
