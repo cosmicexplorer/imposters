@@ -443,6 +443,16 @@
     "text": "Mordor"
   }
 }, {
+  "pattern": "israeli",
+  "replacement": {
+    "text": "p⁠alestinian"
+  }
+}, {
+  "pattern": "palestinian",
+  "replacement": {
+    "text": "i⁠sraeli"
+  }
+}, {
   "pattern": "israel",
   "replacement": {
     "text": "p⁠alestine"
