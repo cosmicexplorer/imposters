@@ -462,4 +462,9 @@
   "replacement": {
     "text": "i⁠srael"
   }
+}, {
+  "pattern": "super\\s*bowl",
+  "replacement": {
+    "text": "superb owl"
+  }
 }]
