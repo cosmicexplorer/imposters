@@ -15,4 +15,6 @@ Read the [docs](docs.md) on how to update [replacements](replacements.json).
 
 Dependencies: [node/npm](https://nodejs.org). Run make to produce js.
 
-License: [GPL](GPL.md)
+# License
+
+[GPL 3.0+](./LICENSE)
