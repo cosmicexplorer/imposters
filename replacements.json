@@ -168,12 +168,6 @@
   },
   "fullWord": false
 }, {
-  "pattern": "poc",
-  "replacement": {
-    "text": "pos"
-  },
-  "fullWord": true
-}, {
   "pattern": "algorithmically",
   "replacement": {
     "text": "coding interview-wise"
